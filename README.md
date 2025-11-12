@@ -7,11 +7,11 @@ This is a KiCad template repository for PCBs designed by the Green Lion Racing t
   <img src="img/glr-pcb-template-back.png" width="49%" />
 </p>
 
-### Overview
+## Overview
 
 In this to be longer overview, you could write what this board does what are it main components and such.
 
-### How to use this template
+## How to use this template
 
 You can use this template by clicking on this [link](https://github.com/new?owner=green-lion-racing&template_name=glr-pcb-template&template_owner=green-lion-racing) or clicking the button `Use this template`. And set your repository name to `glr-pcb-your-project-name`.
 
@@ -35,7 +35,7 @@ This is a list of task you should first do when using this template:
 
 Remove this template guide when everything is changed. 
 
-### Used parts
+## Used parts
 
 | Article | Description | Perma-Link | Quantity |
 | ------- | ----------- | ---------- | -------- |
