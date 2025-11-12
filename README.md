@@ -19,12 +19,13 @@ This is a list of task you should first do when using this template:
 
 - [ ] Rename every occurence of `glr-pcb-template` to `glr-pcb-your-project-name`. Occurence of this string are found here:
   
-  * Project files e. g. `glr-pcb-template.kicad_pcb`, `glr-pcb-template.kicad_pro`, and `glr-pcb-template.kicad_sch`.
+  - Project files e. g. `glr-pcb-template.kicad_pcb`, `glr-pcb-template.kicad_pro`, and `glr-pcb-template.kicad_sch`.
   
-  * Title of this `README.md` file.
+  - Title of this `README.md` file.
+  
   - Images in `img/` and its references in `README.md`.
   
-  * Inside of files `glr-pcb-template.kicad_pro` find the line with `glr-pcb-template` and change to `glr-pcb-your-project-name`.
+  - Inside of files `glr-pcb-template.kicad_pro` find the line with `glr-pcb-template` and change to `glr-pcb-your-project-name`.
 
 - [ ] Change short description and longer overview of this board in `README.md`.
 
