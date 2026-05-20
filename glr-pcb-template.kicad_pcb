@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -107,7 +107,20 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
-		(tenting front back)
+		(tenting
+			(front yes)
+			(back yes)
+		)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(capping no)
+		(filling no)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -116,15 +129,12 @@
 			(usegerberattributes yes)
 			(usegerberadvancedattributes yes)
 			(creategerberjobfile yes)
-			(dashed_line_dash_ratio 12.000000)
-			(dashed_line_gap_ratio 3.000000)
+			(dashed_line_dash_ratio 12)
+			(dashed_line_gap_ratio 3)
 			(svgprecision 4)
 			(plotframeref no)
 			(mode 1)
 			(useauxorigin no)
-			(hpglpennumber 1)
-			(hpglpenspeed 20)
-			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
 			(pdf_metadata yes)
@@ -148,7 +158,6 @@
 			(outputdirectory "")
 		)
 	)
-	(net 0 "")
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad"
 		(layer "F.Cu")
 		(uuid "2b389f41-ea89-41eb-b40a-d943860282a6")
@@ -204,6 +213,7 @@
 			)
 		)
 		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -292,6 +302,7 @@
 			)
 		)
 		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -380,6 +391,7 @@
 			)
 		)
 		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -468,6 +480,7 @@
 			)
 		)
 		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -554,6 +567,7 @@
 			)
 		)
 		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts
 				(xy -3.915849 -0.603821) (xy -3.917646 -0.602024) (xy -3.919443 -0.603821) (xy -3.917646 -0.605619)
@@ -2084,15 +2098,36 @@
 		)
 		(embedded_fonts no)
 	)
+	(gr_arc
+		(start 118 92)
+		(mid 118.585786 90.585786)
+		(end 120 90)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "af5c7d68-c04f-4b8a-a45a-4bec8e82f92a")
+	)
 	(gr_line
-		(start 182 92)
-		(end 182 128)
+		(start 118 128)
+		(end 118 92)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "24bb88f9-94ad-492a-be66-765119f21f44")
+		(uuid "9b0b482c-23f4-43a4-8f29-8975a8aa80ba")
+	)
+	(gr_line
+		(start 120 90)
+		(end 180 90)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "b8cf499d-40b5-4693-95b4-b34a63a67929")
 	)
 	(gr_arc
 		(start 120 130)
@@ -2115,27 +2150,6 @@
 		(layer "Edge.Cuts")
 		(uuid "37f9d102-c514-4892-acb3-d334d5c5084a")
 	)
-	(gr_line
-		(start 118 128)
-		(end 118 92)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "9b0b482c-23f4-43a4-8f29-8975a8aa80ba")
-	)
-	(gr_arc
-		(start 118 92)
-		(mid 118.585786 90.585786)
-		(end 120 90)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "Edge.Cuts")
-		(uuid "af5c7d68-c04f-4b8a-a45a-4bec8e82f92a")
-	)
 	(gr_arc
 		(start 180 90)
 		(mid 181.414214 90.585786)
@@ -2148,14 +2162,14 @@
 		(uuid "b841cb9e-88b5-46ea-acef-3c2b099fcfa4")
 	)
 	(gr_line
-		(start 120 90)
-		(end 180 90)
+		(start 182 92)
+		(end 182 128)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "b8cf499d-40b5-4693-95b4-b34a63a67929")
+		(uuid "24bb88f9-94ad-492a-be66-765119f21f44")
 	)
 	(gr_arc
 		(start 182 128)
